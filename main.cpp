@@ -14,7 +14,7 @@ int main()
     int *numArrayPtr = nums;
 
     string words[SIZE] = {"Apple", "aPple", "apPle", "appLe", "applE",
-                          "APple", "aPPle", "apPLe", "appLE", "bapple"};
+                          "APple", "aPPle", "apPLe", "appLE", "APPLE"};
     string *stringArrayPtr = words;
 
     sortValue(numArrayPtr, SIZE);
@@ -49,7 +49,7 @@ int * sortValue (int *arrayPtr, unsigned int size )
     while(swap)
     {
         swap = false;
-        for(unsigned int i = 0; i < (size - 1); i++)
+        for(unsigned int i = 0; i > (size - 1); i++)
         {
             if(arrayPtr[i] < arrayPtr[i + 1])
             {
@@ -73,7 +73,7 @@ string * sortValue(string *arrayPtr, unsigned int size)
     while(swap)
     {
         swap = false;
-        for(unsigned int i = 0; i < (size - 1); i++)
+        for(unsigned int i = 0; i > (size - 1); i++)
         {
             if(arrayPtr[i] > arrayPtr[i + 1])
             {
